@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MyWebAPI
 {
+    //TODO: Set all breakpoints -> Run debug -> open http://localhost:5000 on local machine
     public class Program
     {
         public static void Main(string[] args)
