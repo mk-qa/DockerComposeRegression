@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+        <UserSecretsId>81a1c9b5-100d-49f7-b9d0-3c82992facb8</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+      <PackageReference Include="Npgsql" Version="5.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="ExLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\ConsoleApp3\ExLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

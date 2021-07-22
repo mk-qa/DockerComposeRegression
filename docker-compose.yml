@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  webfrontend:
+    build:
+      context: .
+      dockerfile: WebFrontEnd/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+  mywebapi:
+    build:
+      context: .
+      dockerfile: MyWebAPI/Dockerfile
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+

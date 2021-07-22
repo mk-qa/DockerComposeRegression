@@ -1,0 +1,28 @@
+services:
+  mywebapi:
+    build:
+      context: C:\Users\marianna.kurtukova\RiderProjects\DockerComposeRegression
+      dockerfile: MyWebAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: mywebapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\marianna.kurtukova\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+  webfrontend:
+    build:
+      context: C:\Users\marianna.kurtukova\RiderProjects\DockerComposeRegression
+      dockerfile: WebFrontEnd/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: webfrontend
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\marianna.kurtukova\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'

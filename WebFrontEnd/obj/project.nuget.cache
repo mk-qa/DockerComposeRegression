@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "28XJDwuM1KVYxm4ThOkBIOrub5s3mA8WLEL63seSqtB6LsbsNoAZJHeXNQ5gv6LYMzrdk2rzkxUKbKftK6SP8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marianna.kurtukova\\RiderProjects\\DockerComposeRegression\\WebFrontEnd\\WebFrontEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marianna.kurtukova\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\marianna.kurtukova\\.nuget\\packages\\npgsql\\5.0.5\\npgsql.5.0.5.nupkg.sha512",
+    "C:\\Users\\marianna.kurtukova\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
